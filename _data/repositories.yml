@@ -1,14 +1,16 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Aiello-Research-Group
+  # - torvalds
+  # - alshedivat
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - Aiello-Research-Group/Aiello-Research-Group.github.io
+  # - alshedivat/al-folio
+  # - jekyll/jekyll
+  # - twbs/bootstrap
+  # - jquery/jquery
+  # - FortAwesome/Font-Awesome
+  # - mathjax/MathJax
+  # - jpswalsh/academicons
