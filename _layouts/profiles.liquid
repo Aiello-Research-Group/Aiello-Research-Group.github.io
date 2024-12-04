@@ -4,38 +4,26 @@ layout: page
 <div class="post">
   <article>
     {% if page.profiles %}
-      {% for profile in page.profiles %}
-        {% if forloop.first %}
-          <!-- First profile: Show full details -->
-          <hr>
-          <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-            {% if profile.image %}
-              {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-              {% if profile.image_circular %}
-                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-              {% else %}
-                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-              {% endif %}
-              {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-            {% endif %}
-            {% if profile.more_info %}
-              <div class="more-info">{{ profile.more_info }}</div>
-            {% endif %}
-            <div class="clearfix">
-              {% if profile.content %}
-                {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-                {{ profile_content | markdownify }}
-              {% else %}
-                {{ content }}
-              {% endif %}
-            </div>
-          </div>
-        {% endif %}
-      {% endfor %}
-
-      <!-- Other profiles: Display in a responsive grid -->
+      <!-- First Profile: Dr. Allison Aiello -->
       <hr>
+      <div class="profile">
+        {% assign first_profile = page.profiles | first %}
+        {% if first_profile.image %}
+          <img src="{{ first_profile.image | prepend: 'assets/img/' }}" alt="{{ first_profile.name }}" class="profile-image-full">
+        {% endif %}
+        <h2>{{ first_profile.name }}</h2>
+        <p class="profile-role">{{ first_profile.role }}</p>
+        {% if first_profile.email %}
+          <a href="mailto:{{ first_profile.email }}">{{ first_profile.email }}</a>
+        {% endif %}
+        {% if first_profile.more_info %}
+          <div class="more-info">{{ first_profile.more_info }}</div>
+        {% endif %}
+      </div>
+
+      <!-- Other Profiles: Display in a Responsive Grid -->
+      <hr>
+      <h3>Team Members</h3>
       <div class="profile-grid">
         {% for profile in page.profiles offset:1 %}
           <div class="profile-item">
