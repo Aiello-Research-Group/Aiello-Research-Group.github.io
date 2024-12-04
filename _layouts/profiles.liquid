@@ -6,7 +6,7 @@ layout: page
     {% if page.profiles %}
       <!-- First Profile: Dr. Allison Aiello -->
       <hr>
-      <div class="profile">
+      <div class="profile-full">
         {% assign first_profile = page.profiles | first %}
         {% if first_profile.image %}
           <img src="{{ first_profile.image | prepend: 'assets/img/' }}" alt="{{ first_profile.name }}" class="profile-image-full">
