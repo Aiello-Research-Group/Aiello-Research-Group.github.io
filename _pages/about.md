@@ -22,7 +22,7 @@ Our research seeks to identify the interaction and influence of social and biolo
 <section class="research-topics">
   <div class="container">
     <div class="topic">
-      <img src="assets/img/genomics.jpg" alt="Genomics Image">
+      <img src="/assets/img/genomics.jpg" alt="Genomics Image">
       <h3><a href="#genomics">GENOMICS</a></h3>
       <p>
         ARG research has made significant contributions to the field of mental health, using data from Dr. Aiello’s Detroit Neighborhood Health Study (DNHS). We have published some of the first findings of an ...
@@ -31,7 +31,7 @@ Our research seeks to identify the interaction and influence of social and biolo
     </div>
     
     <div class="topic">
-      <img src="assets/img/prevention.jpg" alt="Prevention Image">
+      <img src="/assets/img/prevention.jpg" alt="Prevention Image">
       <h3><a href="#prevention">PREVENTING INFECTION IN THE CLINICAL AND COMMUNITY SETTING</a></h3>
       <p>
         Our work has been widely utilized in the clinical environment and has played a major role in setting the standards for hand hygiene practices of clinicians and staff members. Dr. Aiello has led two CD ...
@@ -40,7 +40,7 @@ Our research seeks to identify the interaction and influence of social and biolo
     </div>
 
     <div class="topic">
-      <img src="assets/img/immunity.jpg" alt="Immunity Image">
+      <img src="/assets/img/immunity.jpg" alt="Immunity Image">
       <h3><a href="#immunity">SOCIAL DETERMINANTS AND BIOMARKERS OF IMMUNITY</a></h3>
       <p>
         Our novel body of research suggests that there are population-level socioeconomic disparities in immune function in the US, which may have implications for susceptibility to a wide range of diseases a ...
@@ -49,7 +49,7 @@ Our research seeks to identify the interaction and influence of social and biolo
     </div>
     
     <div class="topic">
-      <img src="assets/img/lifecourse.jpg" alt="Life Course Research Image">
+      <img src="/assets/img/lifecourse.jpg" alt="Life Course Research Image">
       <h3><a href="#lifecourse">LIFE COURSE RESEARCH</a></h3>
       <p>
         Many of our research studies have focused on uncovering novel life course risk factors for cardiometabolic and mental health-related outcomes in Latino/a populations. Findings from our research in this ...
