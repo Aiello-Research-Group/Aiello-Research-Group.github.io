@@ -9,7 +9,6 @@ profile:
   image: about.png
   image_circular: false # crops the image to make it circular
   style: "width:100px; height:auto;" # Adjust width and height
-  more_info: >
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
