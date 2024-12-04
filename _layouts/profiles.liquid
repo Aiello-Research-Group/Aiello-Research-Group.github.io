@@ -9,7 +9,7 @@ layout: page
       <div class="profile-full">
         {% assign first_profile = page.profiles | first %}
         {% if first_profile.image %}
-          <img src="{{ first_profile.image | prepend: 'assets/img/' }}" alt="{{ first_profile.name }}" class="profile-image-full">
+          <img src="{{ first_profile.image | prepend: '/assets/img/' }}" alt="{{ first_profile.name }}" class="profile-image-full">
         {% endif %}
         <h2>{{ first_profile.name }}</h2>
         <p class="profile-role">{{ first_profile.role }}</p>
