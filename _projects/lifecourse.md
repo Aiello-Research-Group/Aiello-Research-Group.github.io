@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 3 with very long name
+title: Life Course Research
 description: a project that redirects to another website
-img: assets/img/7.jpg
+img: assets/img/lifecourse.jpg
 redirect: https://unsplash.com
-importance: 3
+importance: 4
 category: work
 ---
 
