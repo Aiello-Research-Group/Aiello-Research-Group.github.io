@@ -1339,3 +1339,27 @@ ninja-keys::part(ninja-input-wrapper) {
   font-size: 0.9rem;
   color: #555;
 }
+
+
+// Mini Profiles
+
+.profile {
+  margin-bottom: 20px;
+}
+
+.profile img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.basic-info h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.basic-info p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
