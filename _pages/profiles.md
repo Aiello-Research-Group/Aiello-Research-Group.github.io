@@ -11,7 +11,7 @@ profiles:
   # and create one content file for each profile inside _pages/
   - align: right
     image: prof_pic.jpg
-    content: profile_Allison_Aiello.md
+    content: people/profile_Allison_Aiello.md
     image_circular: false # crops the image to make it circular
   - align: left
     image: prof_pic.jpg
