@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /contact_us/
-title: Contact Aiello Research Group
+title: Contact Us
 nav: true
 nav_order: 9
 
