@@ -7,18 +7,24 @@ layout: page
       <!-- First Profile: Dr. Allison Aiello -->
       <hr>
       <div class="profile-full">
-        {% assign first_profile = page.profiles | first %}
-        {% if first_profile.image %}
-          <img src="{{ first_profile.image | prepend: '/assets/img/' }}" alt="{{ first_profile.name }}" class="profile-image-full">
-        {% endif %}
-        <h2>{{ first_profile.name }}</h2>
-        <p class="profile-role">{{ first_profile.role }}</p>
-        {% if first_profile.email %}
-          <a href="mailto:{{ first_profile.email }}">{{ first_profile.email }}</a>
-        {% endif %}
-        {% if first_profile.more_info %}
-          <div class="more-info">{{ first_profile.more_info }}</div>
-        {% endif %}
+        <div class="profile-content">
+          <div class="profile-photo">
+            {% assign first_profile = page.profiles | first %}
+            {% if first_profile.image %}
+              <img src="{{ first_profile.image | prepend: '/assets/img/' }}" alt="{{ first_profile.name }}" class="profile-image-full">
+            {% endif %}
+          </div>
+          <div class="profile-details">
+            <h2>{{ first_profile.name }}</h2>
+            <p class="profile-role">{{ first_profile.role }}</p>
+            {% if first_profile.email %}
+              <a href="mailto:{{ first_profile.email }}">{{ first_profile.email }}</a>
+            {% endif %}
+            {% if first_profile.more_info %}
+              <div class="more-info">{{ first_profile.more_info }}</div>
+            {% endif %}
+          </div>
+        </div>
       </div>
 
       <!-- Other Profiles: Display in a Responsive Grid -->
@@ -28,7 +34,7 @@ layout: page
         {% for profile in page.profiles offset:1 %}
           <div class="profile-item">
             {% if profile.image %}
-              <img src="{{ profile.image | prepend: 'assets/img/' }}" alt="{{ profile.name }}" class="profile-image">
+              <img src="{{ profile.image | prepend: '/assets/img/' }}" alt="{{ profile.name }}" class="profile-image">
             {% endif %}
             <h3 class="profile-name">{{ profile.name }}</h3>
             <p class="profile-role">{{ profile.role }}</p>
