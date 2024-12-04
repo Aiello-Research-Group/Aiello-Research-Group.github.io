@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Research Topics
-permalink: /projects/
-description: A growing collection of your cool projects.
+permalink: /research/
+description: Aiello Research Group's main research topics.
 nav: true
 nav_order: 2
 display_categories: [work, fun]
