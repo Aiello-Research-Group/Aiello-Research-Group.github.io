@@ -2,18 +2,23 @@
 layout: profiles
 permalink: /people/
 title: Team
-description: members of the lab or group
 nav: true
 nav_order: 7
 
 profiles:
   - name: Allison Aiello
     role: Principal Investigator
-    align: left
+    email: aea27@cumc.columbia.edu
     image: Allison_Aiello.jpg
     content: people/profile_Allison_Aiello.md
+    more_info: >
+      Dr. Aiello leads the Aiello Research Group and focuses on the social and biological determinants of health.
+    
   - name: John Doe
     role: Research Scientist
-    align: left
+    image: prof_pic.jpg
+
+  - name: Another Person
+    role: Research Scientist
     image: prof_pic.jpg
 ---
