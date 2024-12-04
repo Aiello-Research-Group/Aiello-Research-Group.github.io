@@ -7,14 +7,13 @@ nav: true
 nav_order: 7
 
 profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
-  - align: left
+  - name: Allison Aiello
+    role: Principal Investigator
+    align: left
     image: Allison_Aiello.jpg
     content: people/profile_Allison_Aiello.md
-    image_circular: false # crops the image to make it circular
-  - align: left
+  - name: John Doe
+    role: Research Scientist
+    align: left
     image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
 ---
