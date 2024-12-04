@@ -7,6 +7,6 @@ nav: true
 nav_order: 9
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
 
-Organize your courses by years, topics, or universities, however you like!
+
+<iframe width="640px" height="480px" src="https://forms.office.com/r/R2dEBEF5Eu?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
