@@ -1305,3 +1305,37 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
+
+// Research Topics in about.md
+
+.research-topics {
+  padding: 40px 0;
+}
+
+.research-topics .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.research-topics .topic {
+  flex: 1 1 calc(25% - 20px); /* 4 topics per row */
+  text-align: center;
+}
+
+.research-topics .topic img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.research-topics .topic h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.research-topics .topic p {
+  font-size: 0.9rem;
+  color: #555;
+}
