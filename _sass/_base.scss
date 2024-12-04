@@ -1345,7 +1345,9 @@ ninja-keys::part(ninja-input-wrapper) {
 
 /* Full-width profile */
 .profile-full {
-  text-align: center;
+  display: flex; /* Use flexbox for alignment */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Add spacing between photo and text */
   margin-bottom: 30px;
   padding: 20px;
   background-color: #f9f9f9; /* Optional background for emphasis */
@@ -1355,18 +1357,18 @@ ninja-keys::part(ninja-input-wrapper) {
   max-width: 150px;
   height: auto;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 0; /* Remove margin-bottom for better alignment */
 }
 
 .profile-full h2 {
   font-size: 1.8rem;
-  margin: 10px 0;
+  margin: 0 0 10px 0; /* Adjust margins for better spacing */
 }
 
 .profile-full .profile-role {
   font-size: 1.2rem;
   color: #555;
-  margin: 5px 0;
+  margin: 0; /* Remove unnecessary margins */
 }
 
 .profile-full .more-info {
