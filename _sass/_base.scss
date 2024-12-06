@@ -1342,43 +1342,62 @@ ninja-keys::part(ninja-input-wrapper) {
 
 
 // Profiles
-/* Full-width profile with rectangular photo */
-.profile-full {
-  display: flex; /* Use flexbox for layout */
-  align-items: flex-start; /* Align items to the top */
-  gap: 20px; /* Add spacing between photo and text */
+
+/* Styling for the first profile */
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Space between image and text */
   margin-bottom: 30px;
-  padding: 20px;
-  background-color: #f9f9f9; /* Optional background for emphasis */
 }
 
-.profile-full img {
-  width: 200px; /* Set fixed width for rectangular photo */
+.profile img {
+  max-width: 200px; /* Adjust size as needed */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Slightly rounded corners for a professional look */
-  object-fit: cover; /* Ensure photo fills the container */
+  border-radius: 10px; /* Rounded corners for images */
 }
 
-.profile-full h2 {
+.profile-details {
+  flex: 1; /* Allow details to take the remaining space */
+}
+
+.profile-details h2 {
   font-size: 1.8rem;
-  margin: 0 0 10px 0; /* Adjust margins for better spacing */
+  margin: 0 0 10px;
 }
 
-.profile-full .profile-role {
+.profile-details .profile-role {
   font-size: 1.2rem;
   color: #555;
-  margin: 0; /* Remove unnecessary margins */
+  margin: 0 0 10px;
 }
 
-.profile-full .more-info {
+.profile-details a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.profile-details a:hover {
+  text-decoration: underline;
+}
+
+.more-info {
+  margin-top: 15px;
   font-size: 1rem;
   color: #333;
-  margin-top: 15px;
-  line-height: 1.5; /* Improve readability */
+  line-height: 1.5;
 }
 
+/* Clear floating content */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* Grid for other profiles */
+/* Styling for the team members grid */
 .profile-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1390,21 +1409,29 @@ ninja-keys::part(ninja-input-wrapper) {
   text-align: center;
 }
 
-.profile-image {
-  max-width: 150px;
+.profile-item img {
+  max-width: 150px; /* Smaller size for team members */
   height: auto;
-  border-radius: 50%;
+  border-radius: 50%; /* Circular images */
   margin-bottom: 10px;
 }
 
-.profile-name {
-  font-size: 2rem;
+.profile-item h3 {
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
-.profile-role {
-  font-size: 1.5rem;
+.profile-item .profile-role {
+  font-size: 1rem;
   color: #555;
+}
+
+/* Horizontal rules for separation */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
 }
 
 
