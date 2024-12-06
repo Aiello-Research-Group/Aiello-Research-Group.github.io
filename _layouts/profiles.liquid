@@ -1,33 +1,36 @@
----
-layout: page
----
 <div class="post">
   <article>
     {% if page.profiles %}
-      <!-- First Profile: Dr. Allison Aiello -->
+      {% assign first_profile = page.profiles | first %}
       <hr>
-      <div class="profile-full">
-        <div class="profile-content">
-          <div class="profile-photo">
-            {% assign first_profile = page.profiles | first %}
-            {% if first_profile.image %}
-              <img src="{{ first_profile.image | prepend: '/assets/img/' }}" alt="{{ first_profile.name }}" class="profile-image-full">
-            {% endif %}
-          </div>
-          <div class="profile-details">
-            <h2>{{ first_profile.name }}</h2>
-            <p class="profile-role">{{ first_profile.role }}</p>
-            {% if first_profile.email %}
-              <a href="mailto:{{ first_profile.email }}">{{ first_profile.email }}</a>
-            {% endif %}
-            {% if first_profile.more_info %}
-              <div class="more-info">{{ first_profile.more_info }}</div>
-            {% endif %}
-          </div>
+      <div class="profile float-left">
+        {% if first_profile.image %}
+          {% assign profile_image_path = first_profile.image | prepend: '/assets/img/' %}
+          {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+          <img src="{{ profile_image_path }}" class="{{ profile_image_class }}" alt="{{ first_profile.name }}">
+        {% endif %}
+        <div class="profile-details">
+          <h2>{{ first_profile.name }}</h2>
+          <p class="profile-role">{{ first_profile.role }}</p>
+          {% if first_profile.email %}
+            <a href="mailto:{{ first_profile.email }}">{{ first_profile.email }}</a>
+          {% endif %}
+          {% if first_profile.more_info %}
+            <div class="more-info">{{ first_profile.more_info }}</div>
+          {% endif %}
         </div>
       </div>
 
-      <!-- Other Profiles: Display in a Responsive Grid -->
+      <div class="clearfix">
+        {% if first_profile.content %}
+          {% capture profile_content %}{% include_relative {{ first_profile.content }} %}{% endcapture %}
+          {{ profile_content | markdownify }}
+        {% else %}
+          {{ content }}
+        {% endif %}
+      </div>
+
+      <!-- Other Profiles -->
       <hr>
       <h3>Team Members</h3>
       <div class="profile-grid">
