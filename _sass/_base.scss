@@ -1375,7 +1375,8 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 .full-profile .profile-details a {
-  display: inline-block;
+  // display: inline-block;
+  width: "100%"; /* Fixed width */
   margin-bottom: 10px;
   color: #007bff;
   text-decoration: none;
