@@ -1392,12 +1392,12 @@ ninja-keys::part(ninja-input-wrapper) {
 
 /* Team Members Section */
 .team-section {
-  margin-top: 40px; /* Spacing between sections */
+  margin-top: 40px; /* Add spacing between sections */
 }
 
 .profile-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Responsive grid */
   gap: 20px;
 }
 
@@ -1408,7 +1408,7 @@ ninja-keys::part(ninja-input-wrapper) {
 .profile-item img {
   max-width: 150px; /* Adjust size for team members */
   height: auto;
-  border-radius: 50%; /* Circular images */
+  border-radius: 95%; /* Circular images */
   margin-bottom: 10px;
 }
 
