@@ -5,13 +5,13 @@ layout: page
 <div class="post">
   <article>
     {% if page.profiles %}
+      <!-- First Profile -->
       {% assign first_profile = page.profiles | first %}
       <hr>
-      <div class="profile float-left">
+      <div class="profile full-profile">
         {% if first_profile.image %}
           {% assign profile_image_path = first_profile.image | prepend: '/assets/img/' %}
-          {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-          <img src="{{ profile_image_path }}" class="{{ profile_image_class }}" alt="{{ first_profile.name }}">
+          <img src="{{ profile_image_path }}" class="profile-image-full" alt="{{ first_profile.name }}">
         {% endif %}
         <div class="profile-details">
           <h2>{{ first_profile.name }}</h2>
@@ -20,25 +20,28 @@ layout: page
             <a href="mailto:{{ first_profile.email }}">{{ first_profile.email }}</a>
           {% endif %}
           {% if first_profile.more_info %}
-            <div class="more-info">{{ first_profile.more_info }}</div>
+            <p class="more-info">{{ first_profile.more_info }}</p>
           {% endif %}
         </div>
       </div>
 
-      <!-- Other Profiles -->
+      <!-- Team Members Section -->
       <hr>
-      <h3>Team Members</h3>
-      <div class="profile-grid">
-        {% for profile in page.profiles offset:1 %}
-          <div class="profile-item">
-            {% if profile.image %}
-              <img src="{{ profile.image | prepend: '/assets/img/' }}" alt="{{ profile.name }}" class="profile-image">
-            {% endif %}
-            <h3 class="profile-name">{{ profile.name }}</h3>
-            <p class="profile-role">{{ profile.role }}</p>
-          </div>
-        {% endfor %}
+      <div class="team-section">
+        <h3>Team Members</h3>
+        <div class="profile-grid">
+          {% for profile in page.profiles offset:1 %}
+            <div class="profile-item">
+              {% if profile.image %}
+                <img src="{{ profile.image | prepend: '/assets/img/' }}" alt="{{ profile.name }}" class="profile-image">
+              {% endif %}
+              <h3 class="profile-name">{{ profile.name }}</h3>
+              <p class="profile-role">{{ profile.role }}</p>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     {% endif %}
   </article>
 </div>
+
