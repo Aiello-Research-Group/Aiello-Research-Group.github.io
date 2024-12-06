@@ -21,15 +21,6 @@
         </div>
       </div>
 
-      <div class="clearfix">
-        {% if first_profile.content %}
-          {% capture profile_content %}{% include_relative {{ first_profile.content }} %}{% endcapture %}
-          {{ profile_content | markdownify }}
-        {% else %}
-          {{ content }}
-        {% endif %}
-      </div>
-
       <!-- Other Profiles -->
       <hr>
       <h3>Team Members</h3>
