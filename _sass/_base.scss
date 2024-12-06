@@ -1352,24 +1352,53 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 .full-profile .profile-image-full {
-  max-width: 250px; /* Size of the image */
+  max-width: 250px; /* Adjust size of the image */
   height: auto;
   border-radius: 10px; /* Optional rounded corners */
 }
 
 .full-profile .profile-details {
-  flex: 1; /* Take up remaining space */
+  flex: 1; /* Allow details to take up the remaining space */
+}
+
+.full-profile .profile-details h2 {
+  margin-bottom: 10px; /* Add spacing after the name */
+  font-size: 1.8rem;
+}
+
+.full-profile .profile-details .profile-role {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.full-profile .profile-details a {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.full-profile .profile-details a:hover {
+  text-decoration: underline;
+}
+
+.full-profile .profile-details .more-info {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6; /* Improve readability with proper line spacing */
+  margin-top: 15px; /* Add spacing from other details */
 }
 
 /* Team Members Section */
 .team-section {
-  margin-top: 40px; /* Add spacing between sections */
+  margin-top: 40px; /* Spacing between sections */
 }
 
 .profile-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-  gap: 20px; /* Space between grid items */
+  gap: 20px;
 }
 
 .profile-item {
@@ -1377,7 +1406,7 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 .profile-item img {
-  max-width: 150px; /* Smaller size for team members */
+  max-width: 150px; /* Adjust size for team members */
   height: auto;
   border-radius: 50%; /* Circular images */
   margin-bottom: 10px;
