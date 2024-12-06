@@ -45,4 +45,8 @@ profiles:
   - name: Eighth Person
     role: Research Scientist
     image: prof_pic.jpg
+
+  - name: Ninth Person
+    role: Research Scientist
+    image: prof_pic.jpg
 ---
