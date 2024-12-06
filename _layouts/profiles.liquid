@@ -19,8 +19,8 @@ layout: page
           {% if first_profile.email %}
             <a href="mailto:{{ first_profile.email }}">{{ first_profile.email }}</a>
           {% endif %}
-          {% if first_profile.more_info %}
-            <p class="more-info">{{ first_profile.more_info }}</p>
+          {% if first_profile.content %}
+            <p class="content">{{ first_profile.content }}</p>
           {% endif %}
         </div>
       </div>
