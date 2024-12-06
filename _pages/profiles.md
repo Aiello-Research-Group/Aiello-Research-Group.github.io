@@ -37,4 +37,12 @@ profiles:
   - name: Sixth Person
     role: Research Scientist
     image: prof_pic.jpg
+    
+  - name: Seventh Person
+    role: Research Scientist
+    image: prof_pic.jpg
+    
+  - name: Eighth Person
+    role: Research Scientist
+    image: prof_pic.jpg
 ---
