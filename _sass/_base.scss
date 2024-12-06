@@ -1370,7 +1370,7 @@ ninja-keys::part(ninja-input-wrapper) {
 
 .full-profile .profile-details .profile-role {
   font-size: 1.2rem;
-  color: #555;
+  // color: #555;
   margin-bottom: 10px;
 }
 
@@ -1388,7 +1388,6 @@ ninja-keys::part(ninja-input-wrapper) {
 
 .full-profile .profile-details .content {
   font-size: 1rem;
-  color: #333;
   line-height: 1.6; /* Improve readability with proper line spacing */
   margin-top: 15px; /* Add spacing from other details */
 }
