@@ -56,6 +56,7 @@ table.table a {
   }
 }
 
+
 blockquote {
   background: var(--global-bg-color);
   border-left: 5px solid var(--global-theme-color);
@@ -616,43 +617,89 @@ footer.sticky-bottom {
   }
 }
 
+//Projects 
+
+// Projects
+
 // Projects
 
 .projects {
-  a {
-    text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
 
-    &:hover {
-      .card-title {
-        color: var(--global-theme-color);
-      }
-    }
-  }
+.projects .topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
 
-  .card {
-    img {
-      width: 100%;
-    }
-  }
+.projects .topic-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  .col {
-    padding-bottom: 1rem;
-  }
+.projects .topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
 
-  .grid-sizer,
-  .grid-item {
-    width: 250px;
-    margin-bottom: 10px;
-  }
+.projects .image-wrapper {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
 
-  h2.category {
-    color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
-    padding-top: 0.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: right;
-  }
+.projects .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.projects .card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.projects .card-body h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.projects .card-body p {
+  font-size: 0.95rem;
+  color: #555;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.projects .card-body .read-more {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.projects .card-body .read-more:hover {
+  text-decoration: underline;
+}
+
+.projects .clearfix {
+  margin-bottom: 20px;
 }
 
 // Publications
@@ -1302,45 +1349,97 @@ ninja-keys::part(ninja-input-wrapper) {
 
 // highlight-search-term
 ::highlight(search) {
-  background-color: var(--global-theme-color);
-  color: var(--global-text-color);
+  background-color: #fff59d; /* Soft yellow */
+  color: inherit; /* Preserve text color */
+  border-radius: 3px;
+  padding: 0 2px;
 }
 
 
 // Research Topics in about.md
+/* Research Topics Section - Final Fixed Version */
+
+/* Research Topics Section - Fully Fixed Version */
 
 .research-topics {
-  padding: 40px 0;
+   margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: 'Inter', 'Segoe UI', sans-serif; /* or any other font */
+
 }
 
-.research-topics .container {
+.research-topics .topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.topic-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
 }
 
-.research-topics .topic {
-  flex: 1 1 calc(25% - 20px); /* 4 topics per row */
-  text-align: center;
+.image-wrapper {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
 }
 
-.research-topics .topic img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.research-topics .topic h3 {
-  font-size: 1.25rem;
-  margin-bottom: 10px;
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-.research-topics .topic p {
-  font-size: 0.9rem;
+.card-body h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.card-body p {
+  font-size: 0.95rem;
   color: #555;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
+.clearfix {
+  margin-bottom: 20px; /* Or try 60px if you want more space */
+}
+.card-body .read-more {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #0056b3;
+  text-decoration: none;
 
+  &:hover {
+    text-decoration: underline;
+  }
+}
 // Profiles
 
 /* Profile Section - Dr. Allison Aiello */
@@ -1348,17 +1447,18 @@ ninja-keys::part(ninja-input-wrapper) {
   display: flex;
   align-items: flex-start;
   gap: 20px; /* Space between image and text */
-  margin-bottom: 30px;
+  margin-bottom: 1px;
   width: 100%; /* Make the profile section as wide as the page */
 }
 
 .full-profile .profile-image-full {
-  max-width: 270px; /* Adjust size of the image */
-  height: auto;
-  border-radius: 10px; /* Optional rounded corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* shadow */
+  width: 370px; /* Increased width */
+  height: auto; /* Increased height */
+  margin-bottom: 10px;
+  border-radius: 12px; /* Slightly larger rounded corners */
+  object-fit: cover; /* Ensures no distortion */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
 }
-
 .full-profile .profile-details {
   flex: 1; /* Allow details to take up the remaining space */
 }
@@ -1399,20 +1499,24 @@ ninja-keys::part(ninja-input-wrapper) {
 
 .profile-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .profile-item {
   text-align: center;
 }
 
+//Team member pictures formatting
 .profile-item img {
-  max-width: 170px; /* Adjust size for team members */
-  height: auto;
-  border-radius: 7px; /* Circular images */
+  width: 100%; /* Ensures the image fills the card's width */
+  height: 250px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures the image is cropped proportionally without distortion */
+  border-radius: 8px; /* Optional: Adds rounded corners to match the card design */
   margin-bottom: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* shadow */
 }
 
 .profile-item h3 {
@@ -1430,6 +1534,101 @@ hr {
   background-color: #ddd;
   margin: 20px 0;
 }
+
+/* Contact Us Page Styling */
+.contact-us {
+  padding: 60px 0;
+  background-color: #f4f4f4;
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #666;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: #00796b;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+  }
+
+  .submit-button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+
+  .submit-button:hover {
+    background-color: #004d40;
+  }
+
+  .embedded-form iframe {
+    border: none;
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+
 
 
 

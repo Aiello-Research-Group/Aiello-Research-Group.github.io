@@ -47,7 +47,18 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <!-- Title with hyperlink -->
+{% if entry.doi %}
+  <div class="title">
+    <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener noreferrer">{{ entry.title }}</a>
+  </div>
+{% elsif entry.url %}
+  <div class="title">
+    <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">{{ entry.title }}</a>
+  </div>
+{% else %}
+  <div class="title">{{ entry.title }}</div>
+{% endif %}
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}

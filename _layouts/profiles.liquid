@@ -14,7 +14,13 @@ layout: page
           <img src="{{ profile_image_path }}" class="profile-image-full" alt="{{ first_profile.name }}">
         {% endif %}
         <div class="profile-details">
-          <h2>{{ first_profile.name }}</h2>
+          <h2>
+  {% if first_profile.scholar_url %}
+    <a href="{{ first_profile.scholar_url }}" target="_blank">{{ first_profile.name }}</a>
+  {% else %}
+    {{ first_profile.name }}
+  {% endif %}
+</h2>
           <p class="profile-role">{{ first_profile.role }}</p>
           {% if first_profile.email %}
             <a href="mailto:{{ first_profile.email }}">{{ first_profile.email }}</a>
@@ -34,7 +40,13 @@ layout: page
               {% if profile.image %}
                 <img src="{{ profile.image | prepend: '/assets/img/' }}" alt="{{ profile.name }}" class="profile-image">
               {% endif %}
-              <h3 class="profile-name">{{ profile.name }}</h3>
+              <h3 class="profile-name">
+  {% if profile.scholar_url %}
+    <a href="{{ profile.scholar_url }}" target="_blank">{{ profile.name }}</a>
+  {% else %}
+    {{ profile.name }}
+  {% endif %}
+</h3>
               <p class="profile-role">{{ profile.role }}</p>
             </div>
           {% endfor %}

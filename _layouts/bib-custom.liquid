@@ -1,0 +1,21 @@
+<li class="publication-entry">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="title">
+        {% if entry.doi %}
+          <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">{{ entry.title }}</a>
+        {% elsif entry.url %}
+          <a href="{{ entry.url }}" target="_blank" rel="noopener">{{ entry.title }}</a>
+        {% else %}
+          {{ entry.title }}
+        {% endif %}
+      </div>
+
+      <div class="author">{{ entry.author }}</div>
+      <div class="periodical">
+        {% if entry.journal %}<em>{{ entry.journal }}</em>{% endif %}
+        {% if entry.year %}, {{ entry.year }}{% endif %}
+      </div>
+    </div>
+  </div>
+</li>

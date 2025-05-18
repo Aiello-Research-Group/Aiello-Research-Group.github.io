@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 group :jekyll_plugins do
+    gem 'observer'
+    gem 'concurrent-ruby', '1.3.5'
     gem 'classifier-reborn'
     gem 'jekyll'
     gem 'jekyll-archives'

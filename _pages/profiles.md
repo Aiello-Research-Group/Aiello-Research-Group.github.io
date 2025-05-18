@@ -11,42 +11,48 @@ profiles:
     email: aea27@cumc.columbia.edu
     image: Allison_Aiello.jpg
     content: >
-      Dr. Allison Aiello is a Professor of Epidemiology at the University of North Carolina – Gillings School of Global Public Health in the Department of Epidemiology and faculty member. She received her Ph.D. with distinction in Epidemiology from Columbia University-Mailman School of Public Health and was the recipient of the Ana C. Gelman award for outstanding achievement and promise in the field of epidemiology. Her research investigates psychosocial, socioeconomic and race/ethnic disparities in health, the relationship between infection and chronic diseases, and prevention of infection in the community setting. She has identified relationships between psychosocial determinants and immune response to infection and helped uncover social disparities in the burden of infection and immune response to cytomegalovirus in the US population. Currently, Dr. Aiello is the PI of several NIH-funded studies where she is examining social, behavioral, biological, and genetic determinants of health outcomes. 
+      Dr. Allison Aiello is a Professor of Epidemiology at UNC’s Gillings School of Global Public Health. She earned her Ph.D. with distinction from Columbia University and received the Ana C. Gelman Award for excellence in epidemiology. Her research focuses on psychosocial and socioeconomic health disparities, infection-related chronic diseases, and community-level infection prevention. Dr. Aiello has led pioneering work on the links between social stressors, immune response, and infection burden, including disparities in cytomegalovirus outcomes. She currently leads multiple NIH-funded studies exploring social, behavioral, biological, and genetic determinants of health. 
 
     
-  - name: John Doe
-    role: Research Scientist
-    image: prof_pic.jpg
+  - name: Rebecca Stebbins
+    role: Associate Research Scientist
+    image: Rebecca_Stebbins.jpg
+    scholar_url: https://scholar.google.com/citations?user=0zQjNi8AAAAJ&hl=en
 
-  - name: Another Person
-    role: Some other title
-    image: prof_pic.jpg
+  - name: Cherese Parker
+    role: Project Director
+    image: Cherese_Parker.png
+    scholar_url: https://scholar.google.com/citations?user=0zQjNi8AAAAJ&hl=en
     
-  - name: Third Person
-    role: Research Scientist
-    image: prof_pic.jpg
+  - name: Scott Reid
+    role: Project Manager
+    image: Scott_Reid.png
 
-  - name: Fourth Person
-    role: Research Scientist
-    image: prof_pic.jpg
+  - name: Lynn Ngo
+    role: Project Coordinator
+    image: Lynn_Ngo.png
     
-  - name: Fifth Person
-    role: Research Scientist
-    image: prof_pic.jpg
+  - name: Farizah Rob
+    role: Biostatistician
+    image: FarizahRob.png
+    scholar_url: https://scholar.google.com/citations?user=gw-4sqoAAAAJ&hl=en&oi=sra
     
-  - name: Sixth Person
-    role: Research Scientist
-    image: prof_pic.jpg
+  - name: Youngjoon Bae
+    role: Post-doctoral Research Scientist
+    image: Youngjoon_Bae.jpeg
+    scholar_url: https://scholar.google.com/scholar?q=author:%22Bae%20Youngjoon%22
     
-  - name: Seventh Person
-    role: Research Scientist
-    image: prof_pic.jpg
+  - name: Maya Krishnamoorthy
+    role: Graduate Research Assistant
+    image: Maya_Krishnamoorthy.jpg
     
-  - name: Eighth Person
-    role: Research Scientist
-    image: prof_pic.jpg
+  - name: Jasmine Lo
+    role: Graduate Research Assistant
+    image: Jasmine_Lo.png
+    scholar_url:  
 
-  - name: Ninth Person
-    role: Research Scientist
-    image: prof_pic.jpg
+  - name: Devdatt Golwala
+    role: Graduate Research Assistant
+    image: Devdatt_golwala.jpg
+    scholar_url: http://scholar.google.com/citations?user=BQJYbiMAAAAJ&hl=en&oi=sra
 ---

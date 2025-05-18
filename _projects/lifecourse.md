@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Life Course Research
-description: a project that redirects to another website
-img: assets/img/lifecourse.jpg
+description: 
+image: assets/img/lifecourse.png
 redirect: https://unsplash.com
 importance: 4
 category: work

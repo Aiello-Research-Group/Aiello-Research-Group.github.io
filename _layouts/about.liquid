@@ -41,20 +41,22 @@ layout: default
     <!-- Research Topics -->
     {% if page.topics %}
       <h2>Research Topics</h2>
-      <section class="research-topics">
-        <div class="container">
-          {% for topic in page.topics %}
-            <div class="topic">
-              <img src="{{ topic.image }}" alt="{{ topic.title }} Image">
-              <h3><a href="{{ topic.link }}">{{ topic.title }}</a></h3>
-              <p>
-                {{ topic.description }}
-                <a href="{{ topic.link }}">{{ topic.link_text }}</a>
-              </p>
-            </div>
-          {% endfor %}
-        </div>
-      </section>
+    <section class="research-topics">
+  <div class="topics-grid">
+    {% for topic in page.topics %}
+   <div class="topic-card">
+  <div class="image-wrapper">
+    <img src="{{ topic.image }}" alt="{{ topic.title }} image">
+  </div>
+  <div class="card-body">
+    <h3>{{ topic.title }}</h3>
+    <p>{{ topic.description }}</p>
+    <a class="read-more" href="{{ topic.link }}">{{ topic.link_text }}</a>
+  </div>
+</div>
+    {% endfor %}
+  </div>
+</section>
     {% endif %}
 
     <!-- News -->
@@ -65,13 +67,7 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
+  
 
     <!-- Social -->
     {% if page.social %}

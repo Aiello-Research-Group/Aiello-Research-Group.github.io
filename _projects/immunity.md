@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Social Determinants and Biomarkers of Immunity
-description: a project with a background image and giscus comments
-img: assets/img/immunity.jpg
+description: 
+image: assets/img/3856284.jpg
 importance: 3
 category: work
 giscus_comments: true

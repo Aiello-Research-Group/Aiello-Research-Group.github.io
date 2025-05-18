@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Genomics
-img: assets/img/genomics.jpg
+image: assets/img/genomics.jpg
 importance: 1
 category: work
 related_publications: true

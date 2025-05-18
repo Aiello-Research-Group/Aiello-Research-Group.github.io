@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Preventing Infection
-description: in the clinical and community setting
-img: assets/img/prevention.jpg
+description:
+image: assets/img/prevention.jpg
 importance: 2
 category: work
 related_publications: true
