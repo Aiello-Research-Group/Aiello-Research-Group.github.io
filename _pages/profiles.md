@@ -53,6 +53,6 @@ profiles:
 
   - name: Devdatt Golwala
     role: Graduate Research Assistant
-    image: Jasmine_Lo.png
+    image: drg.jpg
     scholar_url: http://scholar.google.com/citations?user=BQJYbiMAAAAJ&hl=en&oi=sra
 ---
