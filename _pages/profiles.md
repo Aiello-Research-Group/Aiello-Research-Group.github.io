@@ -53,6 +53,6 @@ profiles:
 
   - name: Devdatt Golwala
     role: Graduate Research Assistant
-    image: Devdatt_golwala.jpg
+    image: drg.jpg
     scholar_url: http://scholar.google.com/citations?user=BQJYbiMAAAAJ&hl=en&oi=sra
 ---
