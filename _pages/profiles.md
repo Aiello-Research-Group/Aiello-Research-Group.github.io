@@ -22,7 +22,6 @@ profiles:
   - name: Cherese Parker
     role: Project Director
     image: Cherese_Parker.png
-    scholar_url: https://scholar.google.com/citations?user=0zQjNi8AAAAJ&hl=en
     
   - name: Scott Reid
     role: Project Manager
